@@ -17,7 +17,8 @@ import { usePathname } from "next/navigation"; // this is a client component hoo
 const NavContent = () => {
 	const pathname = usePathname();
 	return (
-		<section className="flex h-full flex-col gap-6 pt-16">
+		<section className="flex flex-col gap-6 pt-16">
+			{/* h-full in above section? */}
 			{sidebarLinks.map((item) => {
 				const isActive =
 					(pathname.includes(item.route) && item.route.length > 1) ||
@@ -78,7 +79,7 @@ const MobileNav = () => {
 						Dev <span className="text-primary-500">Overflow</span>
 					</p>
 				</Link>
-				<div>
+				<div className="flex h-full flex-col justify-between pb-10">
 					<SheetClose asChild>
 						<NavContent />
 					</SheetClose>

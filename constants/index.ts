@@ -44,6 +44,40 @@ export const sidebarLinks: SidebarLink[] = [
 	},
 ];
 
+export const sidebarQuestions = [
+	"Best practices for data fetching in a Next.js application with Server-Side Rendering (SSR)?",
+	"Can I get the course for free?",
+	"Redux Toolkit Not Updating State as Expected",
+	"Async/Await Function Not Handling Errors Properly",
+	"How do I use express as a custom server in NextJS?",
+];
+
+export const sidebarTags: {
+	tag: string;
+	rank: number;
+}[] = [
+	{
+		tag: "NEXTJS",
+		rank: 10,
+	},
+	{
+		tag: "NEXT JS",
+		rank: 4,
+	},
+	{
+		tag: "REACT",
+		rank: 4,
+	},
+	{
+		tag: "CSS",
+		rank: 4,
+	},
+	{
+		tag: "JAVASCRIPT",
+		rank: 3,
+	},
+];
+
 export const BADGE_CRITERIA = {
 	QUESTION_COUNT: {
 		BRONZE: 10,
